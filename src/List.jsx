@@ -1,18 +1,13 @@
 import React from 'react'
+import features from './features'
 
-const features = [
-   "like",
-   "comment",
-   "delete",
-   "reaction"
-]
 
 
 export default function List() {
   return (
     <div>
         {features.map((element) => (
-            <button>{element}</button>
+            <button className='button'>{element}</button>
         ))}
 
     </div>
